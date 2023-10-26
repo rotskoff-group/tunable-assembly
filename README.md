@@ -16,6 +16,6 @@ We both explain the observed oscillatory force profile for active Brownian parti
 
 This folder contains three subfolders
 
-	1. [hoomd-blue](hoomd-blue/): a modified implementation of the Brownian dynamics integrator of HOOMD-blue v3.11.0 that outputs the fluxes as velocities.
-	2. [simulation-scripts](simulation-scripts/): scripts for the simulation studies in the paper, with the general workflow of using `calculate_rg.py`, `generate.py`, `equilibriate.py`, `equilibriate_active.py`, and then `run.py` in that order.
-	3. [odd-diffusion](odd-diffusion/): code for obtaining the numerical solution for the odd diffusion system.
+	1. [hoomd-blue](https://github.com/rotskoff-group/tunable-assembly/tree/main/hoomd-blue): a modified implementation of the Brownian dynamics integrator of HOOMD-blue v3.11.0 that outputs the fluxes as velocities.
+	2. [odd-diffusion](https://github.com/rotskoff-group/tunable-assembly/tree/main/odd-diffusion): code for obtaining the numerical solution for the odd diffusion system.
+	3. [simulation-scripts](https://github.com/rotskoff-group/tunable-assembly/tree/main/simulation-scripts): scripts for the simulation studies in the paper, with the general workflow of using `calculate_rg.py`, `generate.py`, `equilibriate.py`, `equilibriate_active.py`, and then `run.py` in that order.
