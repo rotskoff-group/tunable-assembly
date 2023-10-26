@@ -15,6 +15,7 @@ We show that, while assembly does not occur dynamically for achiral active baths
 We both explain the observed oscillatory force profile for active Brownian particles and demonstrate that chiral active motion leads to fluxes consistent with an odd diffusion tensor that, when appropriately tuned, produces long-ranged assembly forces. 
 
 This folder contains three subfolders
+
 	1. [hoomd-blue](hoomd-blue/): a modified implementation of the Brownian dynamics integrator of HOOMD-blue v3.11.0 that outputs the fluxes as velocities.
 	2. [simulation-scripts](simulation-scripts/): scripts for the simulation studies in the paper, with the general workflow of using `calculate_rg.py`, `generate.py`, `equilibriate.py`, `equilibriate_active.py`, and then `run.py` in that order.
 	3. [odd-diffusion](odd-diffusion/): code for obtaining the numerical solution for the odd diffusion system.
