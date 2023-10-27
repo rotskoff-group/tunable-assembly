@@ -52,7 +52,7 @@ def vacf_parallel_gpu(velocities, cycle, batch_size=16):
     # Generate batches from velocities
     for i in range(0, velocities.shape[1], batch_size):
         if i + batch_size < velocities.shape[1]:
-            velocities_gpu = cp.asarray(velocities[:, i:i + batch_size, :])
+            velocities_gpu = cp.asarray(velocities[:, i : i + batch_size, :])
         else:
             velocities_gpu = cp.asarray(velocities[:, i:, :])
         vacf_xx_, vacf_yy_, vacf_xy_, vacf_yx_ = corrFFTAll_gpu(

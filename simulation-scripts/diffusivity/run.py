@@ -163,9 +163,7 @@ class VACFAnalyzer(hoomd.custom.Action):
 
     def compute(self):
         # Compute the VACF
-        vacf_parallel_gpu(
-            self.velocity_storage, self.cycle, 100
-        )
+        vacf_parallel_gpu(self.velocity_storage, self.cycle, 100)
         self.cycle += 1
 
     def reset(self):
@@ -176,9 +174,7 @@ class VACFAnalyzer(hoomd.custom.Action):
 
 
 vacf_analyzer = VACFAnalyzer(
-    freq=20,
-    final_time=12000000,
-    size=sim.state.N_particles
+    freq=20, final_time=12000000, size=sim.state.N_particles
 )
 vacf_operation = hoomd.update.CustomUpdater(
     action=vacf_analyzer, trigger=hoomd.trigger.Periodic(vacf_analyzer.freq)
