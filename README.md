@@ -6,7 +6,7 @@ Official implementation of:
 
 Clay H. Batton and Grant M. Rotskoff
 
-<https://arxiv.org/abs/2310.17763>
+<https://doi.org/10.1039/D4SM00247D>
 
 **Abstract**: The fluctuations of a nonequilibrium bath enable dynamics inaccessible to any equilibrium system.
 Exploiting the driven dynamics of active matter in order to do useful work has become a topic of significant experimental and theoretical interest. 
